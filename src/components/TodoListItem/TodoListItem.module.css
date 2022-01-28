@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  border: 1px solid black;
+  max-width: 500px;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.wrapper:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.wrapper button {
+  height: 30px;
+  width: 30px;
+  border: 1px solid red;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.wrapper .completed:checked + p {
+  text-decoration: line-through;
+}
+
+.delete {
+  color: red;
+}
